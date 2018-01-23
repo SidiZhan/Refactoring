@@ -3,15 +3,16 @@
     public class Rental
     {
         public Movie Movie { get; }
-
-        public Rental(Movie movie)
+        public int DaysRented { get; }
+        public Rental(Movie movie, int daysRented)
         {
             Movie = movie;
+            DaysRented = daysRented;
         }
 
-        public double GetCharge(int daysRented)
+        public double GetCharge()
         {
-            return Movie.Price * daysRented;
+            return Movie.Price * DaysRented;
         }
     }
 }
