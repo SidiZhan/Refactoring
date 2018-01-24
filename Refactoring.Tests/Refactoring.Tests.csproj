@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InlineClass\PersonFact.cs" />
     <Compile Include="MovieField\CustomerGetTotalChargeFacts.cs" />
     <Compile Include="SampleTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
