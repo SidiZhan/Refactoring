@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Refactoring.MoveField
+namespace Refactoring.ExtractClass
 {
     public class Customer
     {
@@ -19,9 +19,9 @@ namespace Refactoring.MoveField
             Name = name;
         }
 
-        public void RentMovie(string tile, double price, int daysRented, double distance = 0, string city = null, string block = null, string street = null)
+        public void RentMovie(string title, double price, int daysRented, double distance = 0, string city = null, string block = null, string street = null)
         {
-            Title = tile;
+            Title = title;
             Price = price;
             DaysRented = daysRented;
             Distance = distance;
@@ -36,12 +36,12 @@ namespace Refactoring.MoveField
 
             if (Distance > 0 && Distance <= 10)
             {
-                transferFee = 10;
+                transferFee = 15;
             }
 
             if (Distance > 10)
             {
-                transferFee = 10 + 3.5 * (Math.Round(Distance - 10));
+                transferFee = 15 + 3.5 * (Math.Round(Distance - 10));
             }
             return Price * DaysRented + transferFee;
         }
