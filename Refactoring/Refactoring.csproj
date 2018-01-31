@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneratePrimes\PrimesGenerator.cs" />
     <Compile Include="InlineClass\Person.cs" />
     <Compile Include="ExtractClass\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
