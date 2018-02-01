@@ -38,9 +38,9 @@ namespace Refactoring.GeneratePrimes
 
                 //sieve
                 int j;
-                for ( i = 0; i < Math.Sqrt(s) + 1; i++)
+                for ( i = 2; i < Math.Sqrt(s) + 1; i++)
                 {
-                    for (j = 0; j < s; j += i)
+                    for (j = 2* i; j < s; j += i)
                        f[j] = false;// multiple is not prime
                 }
 
@@ -49,7 +49,7 @@ namespace Refactoring.GeneratePrimes
                 for (i = 0; i < s; i++)
                 {
                     if (f[i])
-                       count++;
+                       count++; // bump count.
                 }
 
                 int[] primes = new int[count];
@@ -65,7 +65,7 @@ namespace Refactoring.GeneratePrimes
             }
             else // maxValue < 2
             {
-                return new int[0];
+                return new int[0]; // return null array if bad input.
             }
         }
     }
