@@ -1,4 +1,4 @@
-namespace refactoring
+namespace Refactoring.InlineClass
 {
     public class Person {
         public Person(string name, string officeAreaCode, string officeNumber) {
