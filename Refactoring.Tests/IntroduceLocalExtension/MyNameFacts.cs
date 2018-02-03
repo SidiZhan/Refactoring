@@ -6,8 +6,9 @@ namespace Refactoring.Tests.IntroduceLocalExtension
     public class MyNameFacts
     {
         [Fact]
-        void should_reverse_string()
+        void should_get_full_name()
         {
+            Assert.Equal("Last, First Middle", new MyName("First", "Middle", "Last").GetFullName());
         }
     }
 }
