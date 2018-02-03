@@ -22,13 +22,24 @@ namespace Refactoring.ChangeValueToReference
         }
         public User User { get; set; }
         public List<Product> Products { get; set; }
+        public string GetUserAddress()
+        {
+            return User.Address;
+        }
+
+        public string GetUserPhoneNumber()
+        {
+            return User.PhoneNumber;
+        }
     }
 
     public class User
     {
-        public User(string name)
+        public User(string name, string address, string phoneNumber)
         {
             Name = name;
+            Address = address;
+            PhoneNumber = phoneNumber;
         }
 
         public string Name { get; set; }
