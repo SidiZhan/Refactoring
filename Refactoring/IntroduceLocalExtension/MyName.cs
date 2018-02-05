@@ -1,4 +1,5 @@
-﻿using Refactoring.Libs;
+﻿using System.Net.Http;
+using Refactoring.Libs;
 
 namespace Refactoring.IntroduceLocalExtension
 {

@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,8 +45,11 @@
     <Compile Include="GeneratePrimes\PrimesGenerator.cs" />
     <Compile Include="InlineClass\Person.cs" />
     <Compile Include="ExtractClass\Customer.cs" />
+    <Compile Include="IntroduceForeignMethod\IPUtil.cs" />
     <Compile Include="IntroduceForeignMethod\MyName.cs" />
+    <Compile Include="IntroduceLocalExtension\IPUtil.cs" />
     <Compile Include="IntroduceLocalExtension\MyName.cs" />
+    <Compile Include="Libs\HttpCli.cs" />
     <Compile Include="Libs\Username.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
