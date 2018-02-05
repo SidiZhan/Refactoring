@@ -6,7 +6,7 @@ namespace Refactoring.Libs
 {
     #region Http client library version 0.0.0.1
 
-    class HttpCli
+    public class HttpCli
     {
         protected readonly HttpClient _client;
 
