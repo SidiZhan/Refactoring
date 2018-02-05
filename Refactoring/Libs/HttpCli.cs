@@ -8,7 +8,7 @@ namespace Refactoring.Libs
 
     class HttpCli
     {
-        readonly HttpClient _client;
+        protected readonly HttpClient _client;
 
         public HttpCli()
         {

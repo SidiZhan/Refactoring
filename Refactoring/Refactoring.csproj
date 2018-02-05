@@ -45,10 +45,8 @@
     <Compile Include="GeneratePrimes\PrimesGenerator.cs" />
     <Compile Include="InlineClass\Person.cs" />
     <Compile Include="ExtractClass\Customer.cs" />
-    <Compile Include="IntroduceForeignMethod\IPUtil.cs" />
     <Compile Include="IntroduceForeignMethod\MyName.cs" />
     <Compile Include="IntroduceLocalExtension\IPUtil.cs" />
-    <Compile Include="IntroduceLocalExtension\MyName.cs" />
     <Compile Include="Libs\HttpCli.cs" />
     <Compile Include="Libs\Username.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

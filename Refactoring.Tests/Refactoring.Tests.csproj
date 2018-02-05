@@ -63,10 +63,8 @@
     <Compile Include="GeneratePrimes\PrimesGeneratorTests.cs" />
     <Compile Include="InlineClass\PersonFact.cs" />
     <Compile Include="ExtractClass\CustomerGetTotalChargeFacts.cs" />
-    <Compile Include="IntroduceForeignMethod\IPUtilFacts.cs" />
     <Compile Include="IntroduceForeignMethod\MyNameFacts.cs" />
     <Compile Include="IntroduceLocalExtension\IPUtilFacts.cs" />
-    <Compile Include="IntroduceLocalExtension\MyNameFacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
