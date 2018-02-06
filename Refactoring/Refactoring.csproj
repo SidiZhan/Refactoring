@@ -50,6 +50,9 @@
     <Compile Include="Libs\HttpCli.cs" />
     <Compile Include="Libs\Username.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceDataValueWithObject\Employee.cs" />
+    <Compile Include="SelfEncapsulateField\CappedRange1.cs" />
+    <Compile Include="SelfEncapsulateField\IntRange.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
