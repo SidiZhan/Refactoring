@@ -67,7 +67,6 @@
     <Compile Include="IntroduceLocalExtension\IPUtilFacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceDataValueWithObject\EmployeeFact.cs" />
-    <Compile Include="SelfEncapsulateField\IntRangeFact.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">

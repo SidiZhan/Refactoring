@@ -33,7 +33,7 @@ namespace Refactoring.ReplaceDataValueWithObject
         public string GetCompanyInfoFromPrimaryEmail()
         {
             var domain = PrimaryEmail.Substring(PrimaryEmail.IndexOf("@", StringComparison.Ordinal) + 1);
-            if (domain.Contains(".")) 
+            if (domain.Contains("."))
             {
                 return domain.Substring(0, domain.IndexOf(".", StringComparison.Ordinal));
             }
