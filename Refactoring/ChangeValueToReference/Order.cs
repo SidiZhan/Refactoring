@@ -7,7 +7,7 @@ namespace Refactoring.ChangeValueToReference
     {
         public double GetTotalCostForUser(string userName, List<Order> orders)
         {
-            return orders.Where(order => string.Equals(order.GetUserName(), userName))
+            return orders.Where(order => string.Equals(order.User.Name, userName))
                 .SelectMany(order => order.Products)
                 .Aggregate(0.0, (total, next) => total + next.Price);
         }
@@ -15,18 +15,13 @@ namespace Refactoring.ChangeValueToReference
 
     public class Order
     {
-        User User { get; }
+        public User User { get; }
         public List<Product> Products { get; set; }
 
         public Order(User user, List<Product> products)
         {
             User = user;
             Products = products;
-        }
-
-        public string GetUserName()
-        {
-            return User.Name;
         }
     }
 
