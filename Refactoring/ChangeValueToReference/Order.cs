@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Refactoring.ChangeValueToReference
@@ -7,7 +7,7 @@ namespace Refactoring.ChangeValueToReference
     {
         public double GetTotalCostForUser(string userName, List<Order> orders)
         {
-            return orders.Where(order => string.Equals(order.User.Name, userName))
+            return orders.Where(order => order.User.Equals(UserFactory.GetByName(userName)))
                 .SelectMany(order => order.Products)
                 .Aggregate(0.0, (total, next) => total + next.Price);
         }
@@ -34,6 +34,24 @@ namespace Refactoring.ChangeValueToReference
         {
             Name = name;
             Address = address;
+        }
+
+        protected bool Equals(User other)
+        {
+            return string.Equals(Name, other.Name);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((User) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return (Name != null ? Name.GetHashCode() : 0);
         }
     }
 

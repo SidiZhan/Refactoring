@@ -11,13 +11,13 @@ namespace Refactoring.Tests.ChangeValueToReference
         {
             var orders = new List<Order>
             {
-                new Order(new User("shengqi"), new List<Product> {new Product("Pen", 2.5), new Product("Pen", 2.5)}),
-                new Order(new User("shengqi"), new List<Product> {new Product("Pen", 2.5)}),
-                new Order(new User("shengqi"), new List<Product> {new Product("NoteBook", 2.5)}),
-                new Order(new User("shengqi"), new List<Product> {new Product("NoteBook", 2.5)}),
-                new Order(new User("yanpei"), new List<Product> {new Product("NoteBook", 5.5)}),
-                new Order(new User("yanpei"), new List<Product> {new Product("NoteBook", 20)}),
-                new Order(new User("yanpei"), new List<Product> {new Product("Pencil", 13)}),
+                new Order(UserFactory.GetByName("shengqi"), new List<Product> {new Product("Pen", 2.5), new Product("Pen", 2.5)}),
+                new Order(UserFactory.GetByName("shengqi"), new List<Product> {new Product("Pen", 2.5)}),
+                new Order(UserFactory.GetByName("shengqi"), new List<Product> {new Product("NoteBook", 2.5)}),
+                new Order(UserFactory.GetByName("shengqi"), new List<Product> {new Product("NoteBook", 2.5)}),
+                new Order(UserFactory.GetByName("yanpei"), new List<Product> {new Product("NoteBook1", 5.5)}),
+                new Order(UserFactory.GetByName("yanpei"), new List<Product> {new Product("NoteBook2", 20)}),
+                new Order(UserFactory.GetByName("yanpei"), new List<Product> {new Product("Pencil", 13)}),
             };
             var totalCostForUser1 = new Calculator().GetTotalCostForUser("shengqi", orders);
             Assert.Equal(12.5, totalCostForUser1);
