@@ -1,11 +1,37 @@
-﻿namespace Refactoring.ChangeUnidirectionalAssociationToBidirectional
+﻿using System.Collections.Generic;
+
+namespace Refactoring.ChangeUnidirectionalAssociationToBidirectional
 {
-    class Order
+    public class Engagement
     {
-        public Customer Customer;
+        Client client;
+
+        public Client Client
+        {
+            get { return client; }
+            set
+            {
+                client.FriendEngagements.Remove(this);
+                client = value;
+                client.FriendEngagements.Add(this);
+            }
+        }
+
     }
 
-    class Customer
+    public class Client
     {
+        private readonly HashSet<Engagement> engagements = new HashSet<Engagement>();
+        public string name;
+
+        public Client(string name)
+        {
+            this.name = name;
+        }
+
+        public IEnumerable<Engagement> Engagements => engagements;
+
+        internal HashSet<Engagement> FriendEngagements => engagements;
+
     }
 }

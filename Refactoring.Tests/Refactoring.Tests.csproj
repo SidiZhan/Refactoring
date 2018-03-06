@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeUnidirectionalAssociationToBidirectional\OneToManyTest.cs" />
     <Compile Include="ChangeValueToReference\OrderTests.cs" />
     <Compile Include="GeneratePrimes\PrimesGeneratorTests.cs" />
     <Compile Include="InlineClass\PersonFact.cs" />
