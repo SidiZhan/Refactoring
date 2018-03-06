@@ -4,15 +4,21 @@ namespace Refactoring.ChangeUnidirectionalAssociationToBidirectional
 {
     public class Engagement
     {
+        readonly string name;
         Client client;
+
+        public Engagement(string name)
+        {
+            this.name = name;
+        }
 
         public Client Client
         {
             get { return client; }
             set
             {
-                client.FriendEngagements.Remove(this);
                 client = value;
+                client.FriendEngagements.Remove(this);
                 client.FriendEngagements.Add(this);
             }
         }
@@ -21,7 +27,6 @@ namespace Refactoring.ChangeUnidirectionalAssociationToBidirectional
 
     public class Client
     {
-        private readonly HashSet<Engagement> engagements = new HashSet<Engagement>();
         public string name;
 
         public Client(string name)
@@ -29,9 +34,13 @@ namespace Refactoring.ChangeUnidirectionalAssociationToBidirectional
             this.name = name;
         }
 
-        public IEnumerable<Engagement> Engagements => engagements;
+        private readonly HashSet<Engagement> engagements = new HashSet<Engagement>();
 
-        internal HashSet<Engagement> FriendEngagements => engagements;
+        public HashSet<Engagement> FriendEngagements => engagements;
 
+        public void AddEngagement(Engagement engagement)
+        {
+            engagement.Client = this;
+        }
     }
 }

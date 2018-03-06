@@ -7,19 +7,27 @@ namespace Refactoring.Tests.ChangeUnidirectionalAssociationToBidirectional
     public class OneToManyTest
     {
         [Fact]
-        public void should_get_company_from_employee()
+        public void should_get_company_from_engagement()
         {
-            var employee = new Engagement {Client = new Client("Hasting")};
-            Assert.Equal("Hasting", employee.Client.name);
+            var engagement = new Engagement("hasting1") {Client = new Client("Hasting")};
+            Assert.Equal("Hasting", engagement.Client.name);
         }
 
         [Fact]
-        public void should_get_employee_from_company()
+        public void should_get_engagement_from_company()
         {
             var company = new Client("IBM");
-            var employee = new Engagement() {Client = company};
-            var employee2 = new Engagement() { Client = company};
-            Assert.Equal(2, company.Engagements.Count());
+            var engagement = new Engagement("ibm1") {Client = company};
+            var engagement2 = new Engagement("ibm2") { Client = company};
+            Assert.Equal(2, company.FriendEngagements.Count());
+        }
+
+        [Fact]
+        public void should_add_engagement_for_one_client()
+        {
+            var client = new Client("test");
+            client.AddEngagement(new Engagement("name"));
+            Assert.Equal(1, client.FriendEngagements.Count);
         }
     }
 }

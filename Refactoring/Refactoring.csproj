@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeUnidirectionalAssociationToBidirectional\ManyToMany.cs" />
     <Compile Include="ChangeUnidirectionalAssociationToBidirectional\OneToMany.cs" />
     <Compile Include="ChangeValueToReference\Order.cs" />
     <Compile Include="ChangeValueToReference\UserFactory.cs" />
