@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeBidirectionalAssociationToUnidirectional\OneToManyTest.cs" />
     <Compile Include="ChangeUnidirectionalAssociationToBidirectional\ManyToManyTest.cs" />
     <Compile Include="ChangeUnidirectionalAssociationToBidirectional\OneToManyTest.cs" />
     <Compile Include="ChangeValueToReference\OrderTests.cs" />
