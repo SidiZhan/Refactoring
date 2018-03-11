@@ -47,6 +47,8 @@
     <Compile Include="ChangeUnidirectionalAssociationToBidirectional\OneToMany.cs" />
     <Compile Include="ChangeValueToReference\Order.cs" />
     <Compile Include="ChangeValueToReference\UserFactory.cs" />
+    <Compile Include="EncapsulateCollection\Customer.cs" />
+    <Compile Include="EncapsulateCollection\Order.cs" />
     <Compile Include="GeneratePrimes\PrimesGenerator.cs" />
     <Compile Include="InlineClass\Person.cs" />
     <Compile Include="ExtractClass\Customer.cs" />
@@ -57,9 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceDataValueWithObject\Employee.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EncapsulateCollection\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
