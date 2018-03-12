@@ -54,8 +54,8 @@
     <Compile Include="ExtractClass\Customer.cs" />
     <Compile Include="IntroduceForeignMethod\MyName.cs" />
     <Compile Include="IntroduceLocalExtension\IPUtil.cs" />
-    <Compile Include="Libs\HttpCli.cs" />
-    <Compile Include="Libs\Username.cs" />
+    <Compile Include="IntroduceLocalExtension\HttpCli.cs" />
+    <Compile Include="IntroduceForeignMethod\Username.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceDataValueWithObject\Employee.cs" />
   </ItemGroup>

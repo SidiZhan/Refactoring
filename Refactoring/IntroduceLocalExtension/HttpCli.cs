@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Refactoring.Libs
+namespace Refactoring.IntroduceLocalExtension
 {
     #region Http client library version 0.0.0.1
 

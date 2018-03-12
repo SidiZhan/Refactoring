@@ -1,6 +1,4 @@
-﻿using Refactoring.Libs;
-
-namespace Refactoring.IntroduceForeignMethod
+﻿namespace Refactoring.IntroduceForeignMethod
 {
     public class MyName
     {
