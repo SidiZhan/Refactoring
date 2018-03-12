@@ -1,4 +1,4 @@
-﻿namespace Refactoring.Libs
+﻿namespace Refactoring.IntroduceForeignMethod
 {
     #region I'm a third party library
 
