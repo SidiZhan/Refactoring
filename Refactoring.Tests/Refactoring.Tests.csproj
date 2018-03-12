@@ -59,10 +59,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeBidirectionalAssociationToUnidirectional\OneToManyTest.cs" />
-    <Compile Include="ChangeUnidirectionalAssociationToBidirectional\ManyToManyTest.cs" />
-    <Compile Include="ChangeUnidirectionalAssociationToBidirectional\OneToManyTest.cs" />
     <Compile Include="ChangeValueToReference\OrderTests.cs" />
+    <Compile Include="EncapsulateField\MockProvider.cs" />
+    <Compile Include="EncapsulateField\ProductFact.cs" />
     <Compile Include="GeneratePrimes\PrimesGeneratorTests.cs" />
     <Compile Include="InlineClass\PersonFact.cs" />
     <Compile Include="ExtractClass\CustomerGetTotalChargeFacts.cs" />
