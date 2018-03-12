@@ -7,10 +7,5 @@ namespace Refactoring.EncapsulateCollection
         public string Name { get; set; }
 
         public HashSet<Order> Orders { get; set; }
-
-        public Customer()
-        {
-            Orders = new HashSet<Order>();
-        }
     }
 }

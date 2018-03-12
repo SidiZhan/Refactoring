@@ -63,6 +63,7 @@
     <Compile Include="ChangeUnidirectionalAssociationToBidirectional\ManyToManyTest.cs" />
     <Compile Include="ChangeUnidirectionalAssociationToBidirectional\OneToManyTest.cs" />
     <Compile Include="ChangeValueToReference\OrderTests.cs" />
+    <Compile Include="EncapsulateCollection\CustomerFacts.cs" />
     <Compile Include="GeneratePrimes\PrimesGeneratorTests.cs" />
     <Compile Include="InlineClass\PersonFact.cs" />
     <Compile Include="ExtractClass\CustomerGetTotalChargeFacts.cs" />
@@ -85,9 +86,7 @@
       <Name>Refactoring</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EncapsulateCollection\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
