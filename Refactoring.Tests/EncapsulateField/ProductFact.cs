@@ -11,7 +11,6 @@ namespace Refactoring.Tests.EncapsulateField
             Assert.Equal(90, product.Price);
         }
 
-
 //        [Fact]
 //        public void should_get_zero_when_set_invalid_price()
 //        {
@@ -19,5 +18,23 @@ namespace Refactoring.Tests.EncapsulateField
 //            product.Price = -10;
 //            Assert.Equal(0, product.Price);
 //        }
+
+        #region
+
+        /*
+        #1  product only can get name, can not change name
+
+        #2  lazy load(getter) : get{
+                if(a == null){
+                    a = new A();
+                }
+                return a;
+            }
+
+        #3  find get and set useage,debug
+
+        */
+
+        #endregion
     }
 }

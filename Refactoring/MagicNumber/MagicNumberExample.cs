@@ -16,10 +16,10 @@ namespace Refactoring.MagicNumber
 
         #region Example
 
-        public void GetAssigneeById(int assigneeId)
+        public dynamic GetAssigneeById(int assigneeId)
         {
             HttpClient httpClient = new HttpClient();
-            httpClient.GetAsync("http://localhost:10810/assignee/" + assigneeId);
+            return httpClient.GetAsync("http://localhost:10810/assignee/" + assigneeId);
         }
 
         public static float InverseSqrtFastAlgorithm(float x)
@@ -35,6 +35,26 @@ namespace Refactoring.MagicNumber
         {
             DataTable dateTable = doSomething(id);
             return dateTable.Columns[0].ToString();
+        }
+
+        class Person
+        {
+            private readonly int Male = 0;
+            private readonly int Female = 1;
+            public int Gender { get; set; }
+            Person(int gender)
+            {
+                Gender = gender;
+            }
+        }
+
+        public void DoSomethingInArray()
+        {
+            int[] numbers = new int[10];
+            for(int i = 0;i < 10; ++i)
+            {
+                doSomething(i);
+            }
         }
 
         #endregion

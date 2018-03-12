@@ -55,8 +55,6 @@
     <Compile Include="ExtractClass\Customer.cs" />
     <Compile Include="IntroduceForeignMethod\MyName.cs" />
     <Compile Include="IntroduceLocalExtension\IPUtil.cs" />
-    <Compile Include="Libs\HttpCli.cs" />
-    <Compile Include="Libs\Username.cs" />
     <Compile Include="MagicNumber\MagicNumberExample.cs" />
     <Compile Include="IntroduceLocalExtension\HttpCli.cs" />
     <Compile Include="IntroduceForeignMethod\Username.cs" />
