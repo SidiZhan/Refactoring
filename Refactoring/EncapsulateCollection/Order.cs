@@ -11,7 +11,8 @@ namespace Refactoring.EncapsulateCollection
 
         public override bool Equals(object obj)
         {
-            return obj is Order order &&
+            var order = obj as Order;
+            return order != null &&
                    Id.Equals(order.Id);
         }
 
