@@ -70,6 +70,7 @@
     <Compile Include="IntroduceLocalExtension\IPUtilFacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceDataValueWithObject\EmployeeFact.cs" />
+    <Compile Include="ReplaceRecordWithDataClass\CustomerFacts.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -85,7 +86,6 @@
       <Name>Refactoring</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
