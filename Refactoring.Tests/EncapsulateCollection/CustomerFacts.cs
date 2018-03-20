@@ -24,7 +24,7 @@ namespace Refactoring.Tests.EncapsulateCollection
 
             customer.Orders.Add(order);
 
-            Assert.Single(customer.Orders);
+            Assert.Equal(1, customer.Orders.Count);
             Assert.Equal(order.Id, customer.Orders.First().Id);
             Assert.Equal(order.Money, customer.Orders.First().Money);
         }
@@ -48,7 +48,7 @@ namespace Refactoring.Tests.EncapsulateCollection
 
             customer.Orders.Remove(order);
 
-            Assert.Empty(customer.Orders);
+            Assert.Equal(0, customer.Orders.Count);
         }
     }
 }
