@@ -5,28 +5,25 @@ namespace Refactoring.ReplaceRecordWithDataClass
 {
     public class CustomerCache
     {
-        readonly HashSet<Customer> cache;
+        readonly string[][] cache;
 
         public CustomerCache()
         {
-            cache = new HashSet<Customer>
+            cache = new string[][]
             {
-                new Customer
-                {
-                    ["id"] = "76EF4D19-7503-4449-90B1-5FB85ECB5CA3",
-                    ["name"] = "Kayla"
-                },
-                new Customer
-                {
-                    ["id"] = "B4B14933-E8D0-4D77-A599-AAD44093E5C5",
-                    ["name"] = "Nancy"
-                }
+                new string[] {"76EF4D19", "Kayla"},
+                new string[] {"B4B14933", "Nancy"}
             };
         }
 
-        public IList<Customer> LoadAll()
+        public IList<Dictionary<string, string>> LoadAll()
         {
-            return cache.ToList();
+            return cache.Select(
+                e => new Dictionary<string, string>()
+                {
+                    ["id"] = e[0],
+                    ["name"] = e[1]
+                }).ToList();
         }
     }
 }
