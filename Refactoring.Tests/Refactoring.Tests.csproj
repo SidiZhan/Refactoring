@@ -71,6 +71,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceDataValueWithObject\EmployeeFact.cs" />
     <Compile Include="ReplaceRecordWithDataClass\CustomerFacts.cs" />
+    <Compile Include="ReplaceTypeCodeWithClass\StudentFact.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
