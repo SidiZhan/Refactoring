@@ -11,6 +11,9 @@ namespace Refactoring.Tests.ReplaceTypeCodeWithState
         {
             var engineer = new Employee(0);
             Assert.Equal(3000, engineer.GetPayroll());
+
+            engineer.SetType(2);
+            Assert.Equal(503000, engineer.GetPayroll());
         }
 
         [Fact]
@@ -31,7 +34,7 @@ namespace Refactoring.Tests.ReplaceTypeCodeWithState
         void should_throw_ArgumentException_when_get_payroll_for_incorrect_employee()
         {
             var employee = new Employee(3);
-            Assert.Equal("Incorecct Employee", Assert.Throws<ArgumentException>(() => employee.GetPayroll()).Message);
+            Assert.Equal("Incorrect Employee", Assert.Throws<ArgumentException>(() => employee.GetPayroll()).Message);
         }
     }
 }
