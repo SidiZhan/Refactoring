@@ -1,34 +1,30 @@
-﻿namespace Refactoring.ReplaceSubclassWithField
+﻿using System;
+
+namespace Refactoring.ReplaceSubclassWithField
 {
-    public abstract class Person
+    public class Person
     {
-        public abstract bool IsMale();
-        public abstract char GetCode();
-    }
+        readonly bool isMale;
+        readonly char code;
 
-    public class Male: Person
-    {
-        public override bool IsMale()
+        protected Person(bool isMale, char code)
         {
-            return true;
+            this.isMale = isMale;
+            this.code = code;
         }
 
-        public override char GetCode()
+        public static Person CreateMale()
         {
-            return 'M';
-        }
-    }
-
-    public class Female: Person
-    {
-        public override bool IsMale()
-        {
-            return false;
+            return new Person(true, 'M');
         }
 
-        public override char GetCode()
+        public static Person CreateFeMale()
         {
-            return 'F';
+            return new Person(false, 'F');
         }
+
+        public bool IsMale() { return isMale; }
+
+        public char GetCode() { return code; }
     }
 }

@@ -9,7 +9,7 @@ namespace Refactoring.Tests.ReplaceSubclassWithField
         [Fact]
         void should_get_isMale_and_code_for_male()
         {
-            var male = new Male();
+            var male = Person.CreateMale();
             Assert.True(male.IsMale());
             Assert.Equal('M', male.GetCode());
         }
@@ -17,7 +17,7 @@ namespace Refactoring.Tests.ReplaceSubclassWithField
         [Fact]
         void should_get_isMale_and_code_for_female()
         {
-            var female = new Female();
+            var female = Person.CreateFeMale();
             Assert.False(female.IsMale());
             Assert.Equal('F', female.GetCode());
         }
