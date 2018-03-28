@@ -72,6 +72,7 @@
     <Compile Include="ReplaceArrayWithObject\OrderFacts.cs" />
     <Compile Include="ReplaceDataValueWithObject\EmployeeFact.cs" />
     <Compile Include="ReplaceRecordWithDataClass\CustomerFacts.cs" />
+    <Compile Include="ReplaceSubclassWithField\PersonFacts.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\StudentFact.cs" />
   </ItemGroup>
   <ItemGroup>

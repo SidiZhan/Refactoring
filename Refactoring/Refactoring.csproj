@@ -62,6 +62,7 @@
     <Compile Include="ReplaceArrayWithObject\Order.cs" />
     <Compile Include="ReplaceDataValueWithObject\Employee.cs" />
     <Compile Include="ReplaceRecordWithDataClass\CustomerCache.cs" />
+    <Compile Include="ReplaceSubclassWithField\Person.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\Student.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
