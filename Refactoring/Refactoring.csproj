@@ -60,6 +60,8 @@
     <Compile Include="IntroduceForeignMethod\Username.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceDataValueWithObject\Employee.cs" />
+    <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitShop.cs" />
+    <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitType.cs" />
     <Compile Include="ReplaceRecordWithDataClass\CustomerCache.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\Student.cs" />
     <Compile Include="ReplaceTypeWithState\Employee.cs" />
