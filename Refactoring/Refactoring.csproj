@@ -48,7 +48,7 @@
     <Compile Include="ChangeValueToReference\Order.cs" />
     <Compile Include="ChangeValueToReference\UserFactory.cs" />
     <Compile Include="Conditional-ConsolidateConditionalExpression\ZooTicketPriceCalculator.cs" />
-    <Compile Include="Conditional-DecomposeConditional\ZooTicketPriceCalculator.cs" />
+    <Compile Include="Conditional-DecomposeConditional\TaxCalculator.cs" />
     <Compile Include="EncapsulateField\Product.cs" />
     <Compile Include="EncapsulateCollection\Customer.cs" />
     <Compile Include="EncapsulateCollection\Order.cs" />

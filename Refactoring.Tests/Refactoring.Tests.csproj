@@ -60,6 +60,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeValueToReference\OrderTests.cs" />
+    <Compile Include="Conditional-ConsolidateConditionalExpression\ZooTicketPriceCalculatorFacts.cs" />
+    <Compile Include="Conditional-DecomposeConditional\TaxCalculatorFacts.cs" />
     <Compile Include="EncapsulateField\MockProvider.cs" />
     <Compile Include="EncapsulateField\ProductFact.cs" />
     <Compile Include="EncapsulateCollection\CustomerFacts.cs" />
