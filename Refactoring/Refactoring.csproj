@@ -64,6 +64,12 @@
     <Compile Include="RemoveControlFlag\Mail.cs" />
     <Compile Include="RemoveControlFlag\User.cs" />
     <Compile Include="RemoveControlFlag\UserController.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\Employee.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeStrategy.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeType.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\Engineer.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\Manager.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\Salesman.cs" />
     <Compile Include="ReplaceDataValueWithObject\Employee.cs" />
     <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitShop.cs" />
     <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitType.cs" />
@@ -71,7 +77,6 @@
     <Compile Include="ReplaceTypeCodeWithClass\Student.cs" />
     <Compile Include="ReplaceTypeWithState\Employee.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

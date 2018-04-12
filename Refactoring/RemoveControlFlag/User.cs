@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Refactoring.RemoveControlFlag
+﻿namespace Refactoring.RemoveControlFlag
 {
     public class User
     {
