@@ -57,6 +57,11 @@
     <Compile Include="ExtractClass\Customer.cs" />
     <Compile Include="IntroduceForeignMethod\MyName.cs" />
     <Compile Include="IntroduceLocalExtension\IPUtil.cs" />
+    <Compile Include="IntroduceNullObject\BillingPlan.cs" />
+    <Compile Include="IntroduceNullObject\CalSiteInfo.cs" />
+    <Compile Include="IntroduceNullObject\Customer.cs" />
+    <Compile Include="IntroduceNullObject\PaymentHistory.cs" />
+    <Compile Include="IntroduceNullObject\Site.cs" />
     <Compile Include="MagicNumber\MagicNumberExample.cs" />
     <Compile Include="IntroduceLocalExtension\HttpCli.cs" />
     <Compile Include="IntroduceForeignMethod\Username.cs" />
