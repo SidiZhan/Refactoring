@@ -47,6 +47,8 @@
     <Compile Include="ChangeUnidirectionalAssociationToBidirectional\OneToMany.cs" />
     <Compile Include="ChangeValueToReference\Order.cs" />
     <Compile Include="ChangeValueToReference\UserFactory.cs" />
+    <Compile Include="Conditional-ConsolidateConditionalExpression\ZooTicketPriceCalculator.cs" />
+    <Compile Include="Conditional-DecomposeConditional\TaxCalculator.cs" />
     <Compile Include="EncapsulateField\Product.cs" />
     <Compile Include="EncapsulateCollection\Customer.cs" />
     <Compile Include="EncapsulateCollection\Order.cs" />
@@ -55,15 +57,32 @@
     <Compile Include="ExtractClass\Customer.cs" />
     <Compile Include="IntroduceForeignMethod\MyName.cs" />
     <Compile Include="IntroduceLocalExtension\IPUtil.cs" />
+    <Compile Include="IntroduceNullObject\BillingPlan.cs" />
+    <Compile Include="IntroduceNullObject\CalSiteInfo.cs" />
+    <Compile Include="IntroduceNullObject\Customer.cs" />
+    <Compile Include="IntroduceNullObject\PaymentHistory.cs" />
+    <Compile Include="IntroduceNullObject\Site.cs" />
     <Compile Include="MagicNumber\MagicNumberExample.cs" />
     <Compile Include="IntroduceLocalExtension\HttpCli.cs" />
     <Compile Include="IntroduceForeignMethod\Username.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceArrayWithObject\Order.cs" />
+    <Compile Include="RemoveControlFlag\Mail.cs" />
+    <Compile Include="RemoveControlFlag\User.cs" />
+    <Compile Include="RemoveControlFlag\UserController.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\Employee.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeStrategy.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeType.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\Engineer.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\Manager.cs" />
+    <Compile Include="ReplaceConditionalWithPolymorphism\Salesman.cs" />
     <Compile Include="ReplaceDataValueWithObject\Employee.cs" />
+    <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitShop.cs" />
+    <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitType.cs" />
     <Compile Include="ReplaceRecordWithDataClass\CustomerCache.cs" />
     <Compile Include="ReplaceSubclassWithField\Person.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\Student.cs" />
+    <Compile Include="ReplaceTypeWithState\Employee.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
