@@ -80,6 +80,7 @@
     <Compile Include="ReplaceRecordWithDataClass\CustomerFacts.cs" />
     <Compile Include="ReplaceSubclassWithField\PersonFacts.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\StudentFact.cs" />
+    <Compile Include="ParameterizeMethod\EmployeeFact.cs" />
     <Compile Include="ReplaceTypeCodeWithState\EmployeeFact.cs" />
   </ItemGroup>
   <ItemGroup>

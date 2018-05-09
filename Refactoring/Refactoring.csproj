@@ -82,6 +82,7 @@
     <Compile Include="ReplaceRecordWithDataClass\CustomerCache.cs" />
     <Compile Include="ReplaceSubclassWithField\Person.cs" />
     <Compile Include="ReplaceTypeCodeWithClass\Student.cs" />
+    <Compile Include="ParameterizeMethod\Employee.cs" />
     <Compile Include="ReplaceTypeWithState\Employee.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
