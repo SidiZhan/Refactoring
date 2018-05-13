@@ -71,6 +71,8 @@
     <Compile Include="IntroduceForeignMethod\MyNameFacts.cs" />
     <Compile Include="IntroduceLocalExtension\IPUtilFacts.cs" />
     <Compile Include="IntroduceNullObject\CalSiteInfoFact.cs" />
+    <Compile Include="PreserveWholeObject\BirthdayEmailJobFact.cs" />
+    <Compile Include="PreserveWholeObject\HireAnniversaryEmailJobFact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplaceArrayWithObject\OrderFacts.cs" />
     <Compile Include="RemoveControlFlag\UserFact.cs" />
