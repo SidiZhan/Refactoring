@@ -62,6 +62,7 @@
     <Compile Include="IntroduceNullObject\Customer.cs" />
     <Compile Include="IntroduceNullObject\PaymentHistory.cs" />
     <Compile Include="IntroduceNullObject\Site.cs" />
+    <Compile Include="IntroduceParameterObject\SaySomething.cs" />
     <Compile Include="MagicNumber\MagicNumberExample.cs" />
     <Compile Include="IntroduceLocalExtension\HttpCli.cs" />
     <Compile Include="IntroduceForeignMethod\Username.cs" />

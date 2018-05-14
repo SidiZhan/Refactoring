@@ -71,6 +71,7 @@
     <Compile Include="IntroduceForeignMethod\MyNameFacts.cs" />
     <Compile Include="IntroduceLocalExtension\IPUtilFacts.cs" />
     <Compile Include="IntroduceNullObject\CalSiteInfoFact.cs" />
+    <Compile Include="IntroduceParameterObject\SaySomethingFacts.cs" />
     <Compile Include="PreserveWholeObject\BirthdayEmailJobFact.cs" />
     <Compile Include="PreserveWholeObject\HireAnniversaryEmailJobFact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,7 +100,6 @@
       <Name>Refactoring</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
