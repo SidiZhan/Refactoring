@@ -71,6 +71,7 @@
     <Compile Include="PreserveWholeObject\HireAnniversaryEmailJob.cs" />
     <Compile Include="PreserveWholeObject\Mail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveSettingMethod\Student.cs" />
     <Compile Include="ReplaceArrayWithObject\Order.cs" />
     <Compile Include="RemoveControlFlag\Mail.cs" />
     <Compile Include="RemoveControlFlag\User.cs" />

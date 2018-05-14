@@ -75,6 +75,7 @@
     <Compile Include="PreserveWholeObject\BirthdayEmailJobFact.cs" />
     <Compile Include="PreserveWholeObject\HireAnniversaryEmailJobFact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveSettingMethod\StudentFacts.cs" />
     <Compile Include="ReplaceArrayWithObject\OrderFacts.cs" />
     <Compile Include="RemoveControlFlag\UserFact.cs" />
     <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeFacts.cs" />
