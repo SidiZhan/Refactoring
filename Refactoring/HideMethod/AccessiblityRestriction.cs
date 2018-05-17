@@ -19,21 +19,15 @@
 //
 //public class A  
 //{  
-//    // Error: The type B is less accessible than the field A.myField.  
 //    public B myField = new B();  
 //
-//    // Error: The type B is less accessible  
-//    // than the constant A.myConst.  
 //    public readonly B myConst = new B();  
 //
 //    public B MyMethod()  
 //    {  
-//        // Error: The type B is less accessible   
-//        // than the method A.MyMethod.  
 //        return new B();  
 //    }  
 //
-//    // Error: The type B is less accessible than the property A.MyProp  
 //    public B MyProp  
 //    {  
 //        set  
@@ -48,8 +42,6 @@
 //
 //    public static B operator +(A m1, B m2)  
 //    {  
-//        // Error: The type B is less accessible  
-//        // than the operator A.operator +(A,B)  
 //        return new B();  
 //    }  
 //
