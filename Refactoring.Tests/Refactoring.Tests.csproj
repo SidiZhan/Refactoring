@@ -80,6 +80,7 @@
     <Compile Include="RemoveControlFlag\UserFact.cs" />
     <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeFacts.cs" />
     <Compile Include="ReplaceDataValueWithObject\EmployeeFact.cs" />
+    <Compile Include="ReplaceExceptionWithTest\ReplaceExceptionWithTestFact.cs" />
     <Compile Include="ReplaceErrorCodeWithException\ReplaceErrorCodeWithExceptionFact.cs" />
     <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitShopFacts.cs" />
     <Compile Include="ReplaceRecordWithDataClass\CustomerFacts.cs" />

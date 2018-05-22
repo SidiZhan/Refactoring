@@ -85,6 +85,7 @@
     <Compile Include="ReplaceConditionalWithPolymorphism\Manager.cs" />
     <Compile Include="ReplaceConditionalWithPolymorphism\Salesman.cs" />
     <Compile Include="ReplaceDataValueWithObject\Employee.cs" />
+    <Compile Include="ReplaceExceptionWithTest\ResourcePool.cs" />
     <Compile Include="ReplaceErrorCodeWithException\Account.cs" />
     <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitShop.cs" />
     <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitType.cs" />
