@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Refactoring.ReplaceErrorCodeWithException
 {
@@ -48,11 +49,8 @@ namespace Refactoring.ReplaceErrorCodeWithException
 
         public void Withdraw(double amount)
         {
-            if (amount > Balance)
-            {
-                throw new ArgumentException("Cannot withdraw overdrawn");
-            }
-           Balance -= amount;
+            Debug.Assert(amount <= Balance);
+            Balance -= amount;
         }
 
         public bool CanWithdraw(double amount)
