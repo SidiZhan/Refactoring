@@ -1,4 +1,6 @@
-﻿namespace Refactoring.ReplaceErrorCodeWithException
+﻿using System;
+
+namespace Refactoring.ReplaceErrorCodeWithException
 {
     public class User
     {
@@ -11,13 +13,12 @@
 
         public double Withdraw(double amount)
         {
-            var withdrawCode = account.Withdraw(amount);
-            if (withdrawCode == -1)
+            if (!account.CanWithdraw(amount))
             {
                 HandleOverDrawn();
                 return 0;
             }
-
+            account.Withdraw(amount);
             DoSomething();
             return amount;
         }
@@ -45,15 +46,18 @@
             Balance = balance;
         }
 
-        public int Withdraw(double amount)
+        public void Withdraw(double amount)
         {
             if (amount > Balance)
             {
-                return -1;
+                throw new ArgumentException("Cannot withdraw overdrawn");
             }
+           Balance -= amount;
+        }
 
-            Balance -= amount;
-            return 0;
+        public bool CanWithdraw(double amount)
+        {
+            return Balance >= amount;
         }
     }
 }
