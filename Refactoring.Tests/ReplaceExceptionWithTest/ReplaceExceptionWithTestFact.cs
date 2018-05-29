@@ -11,7 +11,7 @@ namespace Refactoring.Tests.ReplaceExceptionWithTest
         {
             var resource1 = new Resource("Resource1");
             var avaliable = new List<Resource>() {resource1};
-            var respurcePool = new RespurcePool(null, avaliable);
+            var respurcePool = new ResourcePool(null, avaliable);
 
             respurcePool.GetResource("Resource1");
             Assert.Equal(1, respurcePool.GetAllocatedResourceCount());
@@ -20,7 +20,7 @@ namespace Refactoring.Tests.ReplaceExceptionWithTest
         [Fact]
         public void Get_resource_from_resource_pool_when_has_no_avaliable()
         {
-            var respurcePool = new RespurcePool();
+            var respurcePool = new ResourcePool();
             Assert.Equal(0, respurcePool.GetAvaliableResourceCount());
             Assert.Equal(0, respurcePool.GetAllocatedResourceCount());
 

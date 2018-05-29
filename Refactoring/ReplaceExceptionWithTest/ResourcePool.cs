@@ -4,20 +4,20 @@ using System.Linq;
 
 namespace Refactoring.ReplaceExceptionWithTest
 {
-    public class RespurcePool
+    public class ResourcePool
     {
-        List<Resource> Avaliable { get;}
+        List<Resource> Availiable { get;}
         List<Resource> Allocated { get;}
 
-        public RespurcePool(List<Resource> allocated = null, List<Resource> avaliable = null)
+        public ResourcePool(List<Resource> allocated = null, List<Resource> avaliable = null)
         {
             Allocated = allocated?? new List<Resource>();
-            Avaliable = avaliable?? new List<Resource>();
+            Availiable = avaliable?? new List<Resource>();
         }
 
         public int GetAvaliableResourceCount()
         {
-            return Avaliable.Count;
+            return Availiable.Count;
         }
 
 
@@ -28,19 +28,9 @@ namespace Refactoring.ReplaceExceptionWithTest
 
         public Resource GetResource(string name)
         {
-            Resource result;
-            try
-            {
-                result = Avaliable.First(a => a.Name == name);
+            var result = Availiable.FirstOrDefault(a => a.Name == name) ?? new Resource();
                 Allocated.Add(result);
                 return result;
-            }
-            catch (InvalidOperationException)
-            {
-                result = new Resource();
-                Allocated.Add(result);
-                return result;
-            }
         }
     }
 
