@@ -53,6 +53,7 @@
     <Compile Include="EncapsulateCollection\Customer.cs" />
     <Compile Include="EncapsulateCollection\Order.cs" />
     <Compile Include="FormTemplateMethod\Order.cs" />
+    <Compile Include="FormTemplateMethod\OrderPrinter.cs" />
     <Compile Include="GeneratePrimes\PrimesGenerator.cs" />
     <Compile Include="HideMethod\AccessiblityRestriction.cs" />
     <Compile Include="HideMethod\AccessiblityDomain.cs" />
