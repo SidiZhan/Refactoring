@@ -65,6 +65,7 @@
     <Compile Include="EncapsulateField\MockProvider.cs" />
     <Compile Include="EncapsulateField\ProductFact.cs" />
     <Compile Include="EncapsulateCollection\CustomerFacts.cs" />
+    <Compile Include="FormTemplateMethod\OrderFact.cs" />
     <Compile Include="GeneratePrimes\PrimesGeneratorTests.cs" />
     <Compile Include="InlineClass\PersonFact.cs" />
     <Compile Include="ExtractClass\CustomerGetTotalChargeFacts.cs" />
