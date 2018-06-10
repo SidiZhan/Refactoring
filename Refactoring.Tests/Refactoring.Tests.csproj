@@ -81,6 +81,7 @@
     <Compile Include="RemoveControlFlag\UserFact.cs" />
     <Compile Include="ReplaceConditionalWithPolymorphism\EmployeeFacts.cs" />
     <Compile Include="ReplaceDataValueWithObject\EmployeeFact.cs" />
+    <Compile Include="ReplaceDelegationWithInheritance\DeveloperFacts.cs" />
     <Compile Include="ReplaceExceptionWithTest\ReplaceExceptionWithTestFact.cs" />
     <Compile Include="ReplaceErrorCodeWithException\ReplaceErrorCodeWithExceptionFact.cs" />
     <Compile Include="ReplaceInheritanceWithDelegation\ShoppingCartFacts.cs" />
