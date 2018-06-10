@@ -83,6 +83,7 @@
     <Compile Include="ReplaceDataValueWithObject\EmployeeFact.cs" />
     <Compile Include="ReplaceExceptionWithTest\ReplaceExceptionWithTestFact.cs" />
     <Compile Include="ReplaceErrorCodeWithException\ReplaceErrorCodeWithExceptionFact.cs" />
+    <Compile Include="ReplaceInheritanceWithDelegation\ShoppingCartFacts.cs" />
     <Compile Include="ReplaceNestedConditionalWithGuardClauses\FruitShopFacts.cs" />
     <Compile Include="ReplaceRecordWithDataClass\CustomerFacts.cs" />
     <Compile Include="ReplaceSubclassWithField\PersonFacts.cs" />
