@@ -88,6 +88,7 @@
     <Compile Include="ReplaceConditionalWithPolymorphism\Salesman.cs" />
     <Compile Include="ReplaceDataValueWithObject\Employee.cs" />
     <Compile Include="ReplaceDelegationWithInheritance\Developer.cs" />
+    <Compile Include="ReplaceDelegationWithInheritance\Employee.cs" />
     <Compile Include="ReplaceDelegationWithInheritance\Gender.cs" />
     <Compile Include="ReplaceExceptionWithTest\ResourcePool.cs" />
     <Compile Include="ReplaceErrorCodeWithException\Account.cs" />
